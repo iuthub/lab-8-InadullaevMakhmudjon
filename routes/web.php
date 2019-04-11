@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('blog\index');
-});
+})->name('home');
 
 Route::get('/post',function(){
    return view('blog\post');
@@ -22,6 +22,10 @@ Route::get('/post',function(){
 Route::get('/post/{id}',function($id){
     return view('blog\post',['id'=>$id]);
 })->name('post_name');
+
+Route::get('/about',function (){
+    return view('other\about');
+})->name('master_about');
 
 Route::get('/admin',function(){
     return view('admin\index');
