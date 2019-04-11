@@ -22,3 +22,11 @@ Route::get('/post',function(){
 Route::get('/post/{id}',function($id){
     return view('blog\post',['id'=>$id]);
 })->name('post_name');
+
+Route::get('/admin',function(){
+    return view('admin\index');
+})->name('admin_page');
+
+Route::get('admin/create',function(){
+    return view('admin\create');
+})->name('admin_create');

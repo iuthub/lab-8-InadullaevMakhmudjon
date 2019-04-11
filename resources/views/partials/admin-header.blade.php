@@ -3,8 +3,7 @@
         <div class="navbar-header">
             <a href="#" class="navbar-brand">Laravel guide</a>
             <ul class="nav navbar-nav">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Posts</a></li>
             </ul>
         </div>
     </div>
